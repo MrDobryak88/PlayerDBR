@@ -1,0 +1,154 @@
+﻿/* styles.css */
+.root {
+    -fx-background-color: #121212;
+    -fx-font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    -fx-text-fill: #E0E0E0;
+}
+
+.current-track {
+    -fx-font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 15 0;
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.3), 0, 0, 0, 1);
+}
+
+.time-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #B0B0B0;
+    -fx-font-weight: 500;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #1DB954;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-padding: 10 20;
+    -fx-background-radius: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 3, 0, 0, 2);
+    -fx-transition: all 0.2s ease;
+}
+
+.button:hover {
+    -fx-background-color: #1ED760;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 5, 0, 0, 3);
+}
+
+.button:pressed {
+    -fx-background-color: #19A347;
+}
+
+/* Toggle Buttons */
+.toggle-button {
+    -fx-background-color: #2D2D2D;
+    -fx-text-fill: #B3B3B3;
+    -fx-background-radius: 20;
+    -fx-padding: 8 16;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #1DB954;
+    -fx-text-fill: white;
+}
+
+/* Playlist */
+.list-view {
+    -fx-background-color: #181818;
+    -fx-border-color: #2D2D2D;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 0, 1);
+}
+
+.list-cell {
+    -fx-padding: 10;
+    -fx-text-fill: #E0E0E0;
+}
+
+.list-cell:selected {
+    -fx-background-color: #2A2A2A;
+    -fx-text-fill: #FFFFFF;
+}
+
+.list-cell:hover {
+    -fx-background-color: #1F1F1F;
+}
+
+/* Sliders */
+.slider {
+    -fx-control-inner-background: #1DB954;
+    -fx-color: #1DB954;
+}
+
+.slider .track {
+    -fx-background-color: #3E3E3E;
+    -fx-background-radius: 5;
+    -fx-padding: 0.5;
+}
+
+.slider .thumb {
+    -fx-background-color: #1DB954;
+    -fx-background-radius: 50%;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 2, 0, 0, 2);
+}
+
+.slider.speed-slider .track {
+    -fx-background-color: #2D2D2D;
+}
+
+.slider.speed-slider .thumb {
+    -fx-background-color: #1DB954;
+}
+
+/* Progress Bar */
+.progress-bar {
+    -fx-background-color: #3E3E3E;
+    -fx-control-inner-background: #1DB954;
+    -fx-background-radius: 5;
+    -fx-padding: 0.5;
+}
+
+/* ScrollBar */
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #404040;
+    -fx-background-radius: 5;
+    -fx-background-insets: 2;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-padding: 5;
+    -fx-shape: " ";
+}
+
+/* Hover Effects */
+.button:hover,
+.toggle-button:hover,
+.list-cell:hover {
+    -fx-cursor: hand;
+}
+
+/* Transitions */
+.button, .toggle-button, .slider .thumb {
+    -fx-transition: all 0.2s ease;
+}
+
+/* Modern Card Effect */
+.card {
+    -fx-background-color: #181818;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0, 0, 3);
+    -fx-padding: 15;
+}
+
+/* Album Art */
+.album-art {
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 5, 0, 0, 3);
+}
