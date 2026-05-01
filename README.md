@@ -47,7 +47,7 @@
 
 ## Структура проекта
 
-`
+```
 MusicPlayer/
 ├── src/
 │   ├── main/
@@ -69,7 +69,7 @@ MusicPlayer/
 │   │           └── prev.png
 ├── pom.xml
 └── README.md
-`
+```
 
 ## Зависимости
 
